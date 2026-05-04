@@ -63,19 +63,19 @@ const CAL = 'https://calendly.com'
 const steps = [
   {
     n: '01', title: 'Understand your business',
-    body: 'We start with a clear understanding of your service, audience, and goals.',
+    body: 'We talk through your business, your audience, and what you want to achieve.',
   },
   {
     n: '02', title: 'Build your content + ad system',
-    body: 'We create content and run targeted ads designed to attract the right people.',
+    body: 'We create content and run ads built to bring in the right people.',
   },
   {
     n: '03', title: 'Optimize weekly',
-    body: 'We continuously test, improve, and refine what works.',
+    body: 'We test, adjust, and build on what works.',
   },
   {
     n: '04', title: 'Track and report',
-    body: 'You get a clear breakdown of performance every month.',
+    body: 'You get a clear report every month. No guessing.',
   },
 ]
 
@@ -154,7 +154,7 @@ const whyPoints = [
   },
   {
     title: 'Structured execution',
-    body: 'Every action follows a clear plan — content, ads, and optimization working together.',
+    body: 'Every action follows a clear plan. Content, ads, and optimization working together.',
   },
   {
     title: 'Consistent improvement',
@@ -210,8 +210,7 @@ export default function Home() {
 
           <FadeIn delay={160}>
             <p className="text-text-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-              We help service-based businesses generate consistent inquiries
-              using structured social media and Meta ads.
+              We help service businesses get consistent inquiries through social media and Meta ads.
             </p>
           </FadeIn>
 
@@ -252,9 +251,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={120}>
             <p className="text-text-muted text-lg leading-relaxed">
-              That&apos;s because content alone is not enough. At IN&apos;SYNC, we focus on
-              building a simple system that brings in consistent inquiries — not
-              just likes and views.
+              Content alone isn&apos;t enough. At IN&apos;SYNC, we build a system that brings in real inquiries. Not just likes and views.
             </p>
           </FadeIn>
         </div>
@@ -408,8 +405,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={100}>
             <p className="text-text-muted text-lg leading-relaxed mb-10">
-              If you&apos;re looking to build a system that brings in consistent
-              inquiries — let&apos;s have a quick conversation.
+              If you want more inquiries coming in, let&apos;s talk.
             </p>
           </FadeIn>
           <FadeIn delay={200}>

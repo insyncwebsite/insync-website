@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-text-muted text-sm leading-relaxed max-w-[260px]">
-              We build systems that generate consistent inquiries, not just post content.
+              We don't just post content. We build systems that bring in real inquiries.
             </p>
           </div>
 

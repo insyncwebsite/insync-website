@@ -120,11 +120,11 @@ const categories: ServiceCategory[] = [
 ]
 
 const processSteps = [
-  { label: 'Initial discussion',          desc: 'A short call to understand your goals.' },
-  { label: 'Understanding your business', desc: 'Your audience, positioning, and offer.' },
-  { label: 'Strategy and plan',           desc: 'Content, ads, and messaging mapped out.' },
-  { label: 'Execution',                   desc: 'Posts, reels, and campaigns go live.' },
-  { label: 'Optimization & updates',      desc: 'Weekly refinement based on what works.' },
+  { label: 'Initial discussion',          desc: 'We get on a call and learn what you want to achieve.' },
+  { label: 'Understanding your business', desc: 'We dig into who you sell to and what makes you different.' },
+  { label: 'Strategy and plan',           desc: 'We plan the content, ads, and messaging before anything goes live.' },
+  { label: 'Execution',                   desc: 'Posts, reels, and campaigns start running.' },
+  { label: 'Optimization & updates',      desc: "We check what's working and adjust every week." },
 ]
 
 /* ── page ────────────────────────────────────────────────────────── */
@@ -155,9 +155,7 @@ export default function Services() {
           </FadeIn>
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              We don&apos;t offer dozens of complicated services. We focus on one
-              thing: helping you generate consistent inquiries through content
-              and ads.
+              We don&apos;t offer dozens of services. We do one thing well: get you more inquiries through content and ads.
             </p>
           </FadeIn>
         </div>
@@ -224,7 +222,7 @@ export default function Services() {
               </svg>
               <p className="text-text-muted text-sm leading-relaxed">
                 <span className="text-text-primary font-medium">Not ready for ads yet?</span>{' '}
-                We can start with content and scale into lead generation later as your business grows.
+                We can start with content only and bring in ads when you&apos;re ready.
               </p>
             </div>
           </FadeIn>
@@ -297,10 +295,9 @@ export default function Services() {
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary leading-snug mb-5">
-              If you&apos;re serious about growing your
-              <br className="hidden md:block" />business with a structured approach —
+              Want to grow your business with a system that actually works?
             </h2>
-            <p className="text-text-muted text-lg mb-10">let&apos;s talk.</p>
+            <p className="text-text-muted text-lg mb-10">Let&apos;s talk.</p>
           </FadeIn>
           <FadeIn delay={120}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

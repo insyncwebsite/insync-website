@@ -117,9 +117,7 @@ export default function Contact() {
           </FadeIn>
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              If you&apos;re looking to generate more inquiries and build a consistent
-              flow of leads, we&apos;d be happy to understand your business and see
-              how we can help.
+              Tell us about your business and what you&apos;re trying to achieve. We&apos;ll take it from there.
             </p>
           </FadeIn>
         </div>
@@ -239,8 +237,7 @@ export default function Contact() {
                       WhatsApp opened!
                     </h3>
                     <p className="text-text-muted text-sm leading-relaxed max-w-xs">
-                      Your message has been pre-filled. Just hit send and we&apos;ll
-                      get back to you shortly.
+                      Your message is ready. Just hit send and we&apos;ll get back to you.
                     </p>
                   </div>
                   <p className="text-text-muted text-xs">
@@ -314,7 +311,7 @@ export default function Contact() {
                     <textarea
                       required
                       rows={5}
-                      placeholder="What do you sell or offer? Who is your target customer? What's your current marketing situation?"
+                      placeholder="What do you do, who do you sell to, and what's your current marketing like?"
                       value={form.message}
                       onChange={update('message')}
                       className={`${inputCls} resize-none`}

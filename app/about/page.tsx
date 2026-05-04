@@ -90,9 +90,7 @@ export default function About() {
 
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              A digital marketing agency based in Colombo, focused on helping
-              businesses generate consistent inquiries through social media
-              and Meta ads.
+              A digital marketing agency based in Colombo. We help businesses get more inquiries through social media and Meta ads.
             </p>
           </FadeIn>
         </div>
@@ -117,30 +115,22 @@ export default function About() {
             <div className="flex flex-col gap-8">
               <FadeIn delay={80}>
                 <p className="text-text-primary text-lg leading-relaxed">
-                  IN&apos;SYNC started with a simple idea:{' '}
+                  IN&apos;SYNC started with a simple observation.{' '}
                   <span className="text-text-primary font-medium">
-                    most businesses don&apos;t need more content — they need a
-                    system that actually brings in customers.
+                    Most businesses don&apos;t need more content. They need a system that actually brings in customers.
                   </span>
                 </p>
               </FadeIn>
 
               <FadeIn delay={140}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  With around a year of hands-on experience in social media
-                  marketing and paid ads, we&apos;ve seen what works — and what
-                  doesn&apos;t. We&apos;ve worked with service-based businesses across
-                  Colombo and seen the same pattern: posting consistently but
-                  still not seeing inquiries come in.
+                  With around a year in social media marketing and paid ads, we&apos;ve seen what works and what doesn&apos;t. We&apos;ve worked with service businesses across Colombo. The pattern is always the same: posting consistently, but still no real inquiries.
                 </p>
               </FadeIn>
 
               <FadeIn delay={200}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  The problem is almost never the content itself. It&apos;s the lack
-                  of a structured system behind it — one that connects content,
-                  paid ads, and clear messaging into something that moves people
-                  to reach out.
+                  The problem is almost never the content itself. What&apos;s missing is a system behind it. One that connects content, ads, and clear messaging into something that moves people to reach out.
                 </p>
               </FadeIn>
             </div>
@@ -238,8 +228,8 @@ export default function About() {
               &ldquo;
             </span>
             <p className="font-heading text-2xl md:text-3xl font-semibold text-text-primary leading-snug">
-              Just clear work, consistent effort,
-              <br className="hidden sm:block" /> and continuous improvement.
+              Clear work. Consistent effort.
+              <br className="hidden sm:block" /> Real results over time.
             </p>
           </FadeIn>
 
