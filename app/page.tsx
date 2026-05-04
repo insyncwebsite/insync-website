@@ -332,7 +332,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <span className="text-accent text-xs font-semibold tracking-[0.25em] uppercase">Pricing</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                Simple. Transparent.
+                Invest in consistent inquiries.
               </h2>
             </div>
           </FadeIn>
