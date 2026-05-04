@@ -62,26 +62,27 @@ const CAL = 'https://calendly.com'
 
 const steps = [
   {
-    n: '01', title: 'Understand your business',
-    body: 'We talk through your business, your audience, and what you want to achieve.',
+    n: '01', title: 'Know your business',
+    body: 'We find what makes people buy from you.',
   },
   {
-    n: '02', title: 'Build your content + ad system',
-    body: 'We create content and run ads built to bring in the right people.',
+    n: '02', title: 'Launch your lead system',
+    body: 'We build content and ads that bring in ready-to-act prospects.',
   },
   {
-    n: '03', title: 'Optimize weekly',
-    body: 'We test, adjust, and build on what works.',
+    n: '03', title: 'Optimize for growth',
+    body: 'We improve fast and push what drives inquiries.',
   },
   {
-    n: '04', title: 'Track and report',
-    body: 'You get a clear report every month. No guessing.',
+    n: '04', title: 'See what is working',
+    body: 'You get clear numbers, clear progress, and zero guesswork.',
   },
 ]
 
-const industries: { label: string; icon: ReactNode }[] = [
+const industries: { label: string; desc: string; icon: ReactNode }[] = [
   {
     label: 'Construction Companies',
+    desc: 'Turn interest into project leads and keep your pipeline moving.',
     icon: (
       <>
         <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
@@ -91,7 +92,8 @@ const industries: { label: string; icon: ReactNode }[] = [
     ),
   },
   {
-    label: 'Real Estate Agents',
+    label: 'Estate Agents',
+    desc: 'Attract qualified buyers, sellers, and investors ready to act.',
     icon: (
       <>
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -101,6 +103,7 @@ const industries: { label: string; icon: ReactNode }[] = [
   },
   {
     label: 'Villa & Rental Property Owners',
+    desc: 'Drive more direct inquiries and increase occupancy with targeted campaigns.',
     icon: (
       <>
         <circle cx="7.5" cy="15.5" r="5.5" />
@@ -111,6 +114,7 @@ const industries: { label: string; icon: ReactNode }[] = [
   },
   {
     label: 'Service-Based Businesses',
+    desc: 'Stay in front of the right people and generate inquiries consistently.',
     icon: (
       <>
         <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
@@ -119,7 +123,8 @@ const industries: { label: string; icon: ReactNode }[] = [
     ),
   },
   {
-    label: 'Restaurants & F&B',
+    label: 'Restaurants & Cafes',
+    desc: 'Increase footfall, orders, and repeat business with marketing that performs.',
     icon: (
       <>
         <path d="M3 2v5c0 1.7 1.3 3 3 3s3-1.3 3-3V2" />
@@ -130,6 +135,7 @@ const industries: { label: string; icon: ReactNode }[] = [
   },
   {
     label: 'Healthcare & Clinics',
+    desc: 'Bring in more appointment-ready patients with clear, targeted messaging.',
     icon: (
       <path d="M10 2h4v8h8v4h-8v8h-4v-8H2v-4h8V2z" />
     ),
@@ -137,8 +143,8 @@ const industries: { label: string; icon: ReactNode }[] = [
 ]
 
 const inclusions = [
-  '8–10 social media posts per month',
-  '3–4 reels per month',
+  '8 high-quality social media posts per month',
+  '3 short videos / reels per month',
   'Meta ads setup & management',
   'Lead generation campaigns',
   'Ad creatives + copywriting',
@@ -149,16 +155,16 @@ const inclusions = [
 
 const whyPoints = [
   {
-    title: 'Clear communication',
-    body: "You'll always know what's being done and why. No jargon, no fluff.",
+    title: 'Clear Communication',
+    body: 'No vague updates. No confusion. You get full clarity at every stage.',
   },
   {
-    title: 'Structured execution',
-    body: 'Every action follows a clear plan. Content, ads, and optimization working together.',
+    title: 'Strategic Execution',
+    body: 'Every move follows a clear plan built to attract and convert the right audience.',
   },
   {
-    title: 'Consistent improvement',
-    body: 'We track what works and build on it every week.',
+    title: 'Ongoing Optimization',
+    body: "We improve what works, cut what does not, and keep your campaigns moving forward.",
   },
 ]
 
@@ -204,13 +210,13 @@ export default function Home() {
 
           <FadeIn delay={80}>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary leading-[1.06] tracking-tight mb-6">
-              No inquiries?<br />No consistent leads?
+              No steady flow of inquiries?<br />Need consistent leads?
             </h1>
           </FadeIn>
 
           <FadeIn delay={160}>
             <p className="text-text-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-              We help service businesses get consistent inquiries through social media and Meta ads.
+              We help service businesses generate qualified leads through social media and Meta ads. Get more messages, calls, and form fills.
             </p>
           </FadeIn>
 
@@ -220,7 +226,7 @@ export default function Home() {
                 href={CAL} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-accent text-background font-semibold text-sm hover:brightness-110 active:scale-[0.97] transition-all duration-200 w-full sm:w-auto"
               >
-                Book a Quick Call
+                Book a Free Strategy Call
               </a>
               <a
                 href={WA} target="_blank" rel="noopener noreferrer"
@@ -244,14 +250,15 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-[2.6rem] font-bold text-text-primary leading-tight mb-6">
-              Most businesses are posting regularly…
-              <br className="hidden md:block" />
-              but still not getting real inquiries.
+              Most businesses post often and still get no real inquiries
             </h2>
           </FadeIn>
           <FadeIn delay={120}>
+            <p className="text-text-muted text-lg leading-relaxed mb-4">
+              Likes and views do not grow your business. We help service businesses generate consistent, qualified inquiries through social media and Meta ads.
+            </p>
             <p className="text-text-muted text-lg leading-relaxed">
-              Content alone isn&apos;t enough. At IN&apos;SYNC, we build a system that brings in real inquiries. Not just likes and views.
+              Get more messages, calls, and form fills from people ready to buy.
             </p>
           </FadeIn>
         </div>
@@ -294,7 +301,7 @@ export default function Home() {
             <div className="text-center mb-10 md:mb-16">
               <span className="text-accent text-xs font-semibold tracking-[0.25em] uppercase">Industries</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                Who we work with
+                Businesses we help grow with real inquiries
               </h2>
             </div>
           </FadeIn>
@@ -308,6 +315,9 @@ export default function Home() {
                   <span className="text-text-primary text-sm font-medium leading-snug">
                     {ind.label}
                   </span>
+                  <p className="text-text-muted text-xs leading-relaxed">
+                    {ind.desc}
+                  </p>
                 </div>
               </FadeIn>
             ))}
@@ -367,7 +377,7 @@ export default function Home() {
             <div className="text-center mb-10 md:mb-16">
               <span className="text-accent text-xs font-semibold tracking-[0.25em] uppercase">Why us</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                We&apos;re not here to just manage your page.
+                We do more than manage your page. We build for growth.
               </h2>
             </div>
           </FadeIn>
@@ -398,14 +408,12 @@ export default function Home() {
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-text-primary leading-tight mb-5">
-              Ready to build a system that
-              <br className="hidden md:block" />
-              actually brings in leads?
+              Ready to get consistent leads for your business?
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
             <p className="text-text-muted text-lg leading-relaxed mb-10">
-              If you want more inquiries coming in, let&apos;s talk.
+              Stop relying on random posts and slow months. Start building a system that brings in real inquiries.
             </p>
           </FadeIn>
           <FadeIn delay={200}>
