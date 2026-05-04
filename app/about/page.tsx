@@ -90,7 +90,7 @@ export default function About() {
 
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              At IN&apos;SYNC Digital, we build digital marketing systems that align brand, audience, and business goals. Based in Colombo, we partner with businesses to drive consistent inquiries through social media and Meta ads, with every strategy grounded in clarity, consistency, and trust. Our approach is deliberate and focused. We combine strong messaging, structured execution, and performance-led thinking so every touchpoint supports growth. By working in close alignment with each client, we create a digital presence that feels cohesive, credible, and built for long-term impact.
+              At IN&apos;SYNC, we build digital marketing systems that align brand, audience, and business goals. Based in Colombo, we partner with businesses to drive consistent inquiries through social media and Meta ads, with every strategy grounded in clarity, consistency, and trust. Our approach is deliberate and focused. We combine strong messaging, structured execution, and performance-led thinking so every touchpoint supports growth. By working in close alignment with each client, we create a digital presence that feels cohesive, credible, and built for long-term impact.
             </p>
           </FadeIn>
         </div>
