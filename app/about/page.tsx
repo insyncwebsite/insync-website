@@ -220,10 +220,6 @@ export default function About() {
 
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <FadeIn>
-            {/* opening quote mark */}
-            <span className="block font-heading text-6xl text-accent opacity-20 leading-none mb-2 select-none" aria-hidden>
-              &ldquo;
-            </span>
             <p className="font-heading text-2xl md:text-3xl font-semibold text-text-primary leading-snug">
               If your marketing is not bringing leads,
               <br className="hidden sm:block" /> it is costing you business.
