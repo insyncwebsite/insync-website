@@ -39,24 +39,24 @@ function FadeIn({ children, className = '', delay = 0 }: {
 
 /* ── data ────────────────────────────────────────────────────────── */
 const approach = [
-  { n: '01', text: 'Understand the business properly' },
-  { n: '02', text: 'Build a clear strategy' },
-  { n: '03', text: 'Execute consistently' },
-  { n: '04', text: 'Improve based on data' },
+  { n: '01', text: 'Understand what drives your business' },
+  { n: '02', text: 'Build a strategy with clear direction' },
+  { n: '03', text: 'Execute to attract the right audience' },
+  { n: '04', text: 'Improve using real performance data' },
 ]
 
 const principles = [
   {
     no: 'No overpromising.',
-    body: 'We only commit to what we can actually deliver. Honest timelines, honest expectations.',
+    body: 'We set clear targets, realistic timelines, and deliver work that moves your business forward.',
   },
   {
     no: 'No confusion.',
-    body: "You'll always know what's happening, what we're doing, and why it matters.",
+    body: 'You get clear communication, clear direction, and full visibility on what is happening.',
   },
   {
     no: 'No unnecessary complexity.',
-    body: 'Simple, focused systems outperform complicated ones every time.',
+    body: 'We keep your marketing focused, efficient, and built to generate results without wasted effort.',
   },
 ]
 
@@ -84,7 +84,7 @@ export default function About() {
 
           <FadeIn delay={80}>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary leading-[1.08] tracking-tight max-w-2xl">
-              Built on clarity,<br />consistency, and trust.
+              Growth starts with the right system.
             </h1>
           </FadeIn>
 
@@ -115,19 +115,19 @@ export default function About() {
             <div className="flex flex-col gap-8">
               <FadeIn delay={80}>
                 <p className="text-text-primary text-lg leading-relaxed">
-                  IN&apos;SYNC began with a clear belief. Businesses need more than an active online presence. They need a connected system that turns attention into inquiry.
+                  IN&apos;SYNC began with a clear belief. Businesses need more than an online presence. They need a system that turns attention into real inquiries.
                 </p>
               </FadeIn>
 
               <FadeIn delay={140}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  Through hands-on experience in social media marketing and paid advertising, we saw many service-based businesses invest time in content yet struggle to generate steady results. The gap was often structural. Content, paid media, and brand messaging were operating separately.
+                  Working closely with service-based businesses, we saw a common problem. Brands were posting content, spending on ads, and staying active online, yet results stayed inconsistent. We understood why. The strategy was disconnected, the messaging was unclear, and growth was left to chance.
                 </p>
               </FadeIn>
 
               <FadeIn delay={200}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  IN&apos;SYNC was built to bring these parts together, creating a sharper digital framework that helps businesses communicate with precision, attract the right audience, and grow with purpose.
+                  IN&apos;SYNC was built to change that. We bring content, paid media, and brand messaging together into a clear digital system that helps your business attract the right audience, build trust, and drive steady growth.
                 </p>
               </FadeIn>
             </div>
@@ -148,7 +148,7 @@ export default function About() {
                 </span>
                 <div className="mt-4 w-8 h-px bg-accent opacity-60" />
                 <p className="mt-4 text-text-muted text-sm leading-relaxed">
-                  Four things we do for every client, every time.
+                  The four steps behind consistent inquiries and stronger growth.
                 </p>
               </div>
             </FadeIn>
@@ -184,7 +184,7 @@ export default function About() {
                 How We Operate
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                Three things we don&apos;t do.
+                We protect your time, budget, and growth.
               </h2>
             </div>
           </FadeIn>
@@ -225,8 +225,8 @@ export default function About() {
               &ldquo;
             </span>
             <p className="font-heading text-2xl md:text-3xl font-semibold text-text-primary leading-snug">
-              Clear work. Consistent effort.
-              <br className="hidden sm:block" /> Real results over time.
+              If your marketing is not bringing leads,
+              <br className="hidden sm:block" /> it is costing you business.
             </p>
           </FadeIn>
 
