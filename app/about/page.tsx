@@ -90,7 +90,7 @@ export default function About() {
 
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              A digital marketing agency based in Colombo. We help businesses get more inquiries through social media and Meta ads.
+              At IN&apos;SYNC Digital, we build digital marketing systems that align brand, audience, and business goals. Based in Colombo, we partner with businesses to drive consistent inquiries through social media and Meta ads, with every strategy grounded in clarity, consistency, and trust. Our approach is deliberate and focused. We combine strong messaging, structured execution, and performance-led thinking so every touchpoint supports growth. By working in close alignment with each client, we create a digital presence that feels cohesive, credible, and built for long-term impact.
             </p>
           </FadeIn>
         </div>
@@ -115,22 +115,19 @@ export default function About() {
             <div className="flex flex-col gap-8">
               <FadeIn delay={80}>
                 <p className="text-text-primary text-lg leading-relaxed">
-                  IN&apos;SYNC started with a simple observation.{' '}
-                  <span className="text-text-primary font-medium">
-                    Most businesses don&apos;t need more content. They need a system that actually brings in customers.
-                  </span>
+                  IN&apos;SYNC began with a clear belief. Businesses need more than an active online presence. They need a connected system that turns attention into inquiry.
                 </p>
               </FadeIn>
 
               <FadeIn delay={140}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  With around a year in social media marketing and paid ads, we&apos;ve seen what works and what doesn&apos;t. We&apos;ve worked with service businesses across Colombo. The pattern is always the same: posting consistently, but still no real inquiries.
+                  Through hands-on experience in social media marketing and paid advertising, we saw many service-based businesses invest time in content yet struggle to generate steady results. The gap was often structural. Content, paid media, and brand messaging were operating separately.
                 </p>
               </FadeIn>
 
               <FadeIn delay={200}>
                 <p className="text-text-muted text-base leading-relaxed">
-                  The problem is almost never the content itself. What&apos;s missing is a system behind it. One that connects content, ads, and clear messaging into something that moves people to reach out.
+                  IN&apos;SYNC was built to bring these parts together, creating a sharper digital framework that helps businesses communicate with precision, attract the right audience, and grow with purpose.
                 </p>
               </FadeIn>
             </div>
