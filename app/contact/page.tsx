@@ -112,12 +112,12 @@ export default function Contact() {
           </FadeIn>
           <FadeIn delay={80}>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary leading-[1.08] tracking-tight max-w-xl">
-              Let&apos;s discuss your business.
+              Let&apos;s turn your goals into growth.
             </h1>
           </FadeIn>
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              Tell us about your business and what you&apos;re trying to achieve. We&apos;ll take it from there.
+              Share your business goals with us. We&apos;ll create a focused marketing approach built to drive leads, visibility, and results.
             </p>
           </FadeIn>
         </div>
