@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-text-muted text-sm leading-relaxed max-w-[260px]">
-              We don't just post content. We build systems that bring in real inquiries.
+              In&apos;Sync creates clear, results-led social media and Meta ad systems that turn attention into steady business inquiries.
             </p>
           </div>
 

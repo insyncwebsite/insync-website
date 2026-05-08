@@ -61,6 +61,7 @@ const CAL = 'https://calendly.com'
 
 type ServiceCategory = {
   title: string
+  subtitle: string
   items: string[]
   icon: ReactNode
   wide?: boolean
@@ -69,7 +70,8 @@ type ServiceCategory = {
 const categories: ServiceCategory[] = [
   {
     title: 'Content Creation',
-    items: ['8–10 posts per month', '3–4 reels per month'],
+    subtitle: 'Stay visible. Stay relevant. Stay active.',
+    items: ['8 high quality posts per month', '3 engaging reels per month', 'Content built to keep your brand top of mind'],
     icon: (
       <>
         <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
@@ -80,7 +82,8 @@ const categories: ServiceCategory[] = [
   },
   {
     title: 'Performance Marketing',
-    items: ['Meta ads setup & management', 'Lead generation campaigns (WhatsApp/messages)'],
+    subtitle: 'Put your budget behind results.',
+    items: ['Meta ads setup and management', 'Lead generation campaigns built for WhatsApp and direct messages', 'Campaigns designed to bring in qualified prospects, not empty reach'],
     icon: (
       <>
         <circle cx="12" cy="12" r="10" />
@@ -90,8 +93,9 @@ const categories: ServiceCategory[] = [
     ),
   },
   {
-    title: 'Creative & Copy',
-    items: ['Ad creatives', 'Conversion-focused copywriting'],
+    title: 'Creative and Copy',
+    subtitle: 'Make every ad work harder.',
+    items: ['High impact ad creatives', 'Conversion focused copywriting', 'Messaging built to attract attention and drive response'],
     icon: (
       <>
         <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
@@ -100,8 +104,9 @@ const categories: ServiceCategory[] = [
     ),
   },
   {
-    title: 'Optimization & Reporting',
-    items: ['Weekly optimization', 'Monthly performance report'],
+    title: 'Optimization and Reporting',
+    subtitle: 'Improve performance every week.',
+    items: ['Weekly campaign optimization', 'Monthly performance report', 'Clear tracking on what is working and where to scale'],
     icon: (
       <>
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
@@ -111,7 +116,8 @@ const categories: ServiceCategory[] = [
   },
   {
     title: 'Communication',
-    items: ['Direct communication', 'Weekly check-ins'],
+    subtitle: 'Stay aligned. Stay informed.',
+    items: ['Direct communication with our team', 'Weekly check ins', 'Fast updates and clear coordination throughout the month'],
     icon: (
       <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
     ),
@@ -120,11 +126,11 @@ const categories: ServiceCategory[] = [
 ]
 
 const processSteps = [
-  { label: 'Initial discussion',          desc: 'We get on a call and learn what you want to achieve.' },
-  { label: 'Understanding your business', desc: 'We dig into who you sell to and what makes you different.' },
-  { label: 'Strategy and plan',           desc: 'We plan the content, ads, and messaging before anything goes live.' },
-  { label: 'Execution',                   desc: 'Posts, reels, and campaigns start running.' },
-  { label: 'Optimization & updates',      desc: "We check what's working and adjust every week." },
+  { label: 'Start with a call',      desc: 'We learn about your business, your audience, and your goals.' },
+  { label: 'Understand your brand',  desc: 'We identify what makes you different and where the growth opportunity sits.' },
+  { label: 'Build the strategy',     desc: 'We plan your content, campaigns, and messaging before launch.' },
+  { label: 'Launch and manage',      desc: 'We put your content and ads live and manage the work closely.' },
+  { label: 'Optimize and improve',   desc: 'We review results, refine the approach, and keep pushing performance forward.' },
 ]
 
 /* ── page ────────────────────────────────────────────────────────── */
@@ -149,13 +155,12 @@ export default function Services() {
           </FadeIn>
           <FadeIn delay={80}>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary leading-[1.08] tracking-tight max-w-3xl">
-              Simple, structured marketing
-              <br className="hidden sm:block" />that drives inquiries.
+              If your marketing is not bringing leads, it is failing.
             </h1>
           </FadeIn>
           <FadeIn delay={160}>
             <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
-              We don&apos;t offer dozens of services. We do one thing well: get you more inquiries through content and ads.
+              We create content and Meta ad systems built to generate inquiries, support sales, and grow your business with purpose.
             </p>
           </FadeIn>
         </div>
@@ -167,20 +172,23 @@ export default function Services() {
 
           {/* section header */}
           <FadeIn>
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
               <div>
                 <span className="text-accent text-xs font-semibold tracking-[0.25em] uppercase">
                   Core Service
                 </span>
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                  What&apos;s Included
+                  Everything You Need to Turn Attention Into Leads
                 </h2>
               </div>
               <div className="inline-flex items-end gap-1.5 flex-shrink-0">
                 <span className="font-heading text-3xl font-bold text-accent">LKR 50,000</span>
-                <span className="text-text-muted text-sm mb-1">/month</span>
+                <span className="text-text-muted text-sm mb-1">per month</span>
               </div>
             </div>
+            <p className="text-text-muted text-base leading-relaxed mb-10 max-w-2xl">
+              You do not need random posts. You need a focused system that brings in attention, starts conversations, and drives real enquiries. This package gives your brand a complete monthly lead generation engine.
+            </p>
           </FadeIn>
 
           {/* category cards */}
@@ -193,10 +201,15 @@ export default function Services() {
                     <SvgIcon>{cat.icon}</SvgIcon>
                   </div>
                   {/* content */}
-                  <div className={cat.wide ? 'flex flex-col md:flex-row md:items-center md:gap-16 flex-1' : ''}>
-                    <h3 className="font-heading text-base font-semibold text-text-primary mb-3 md:mb-0 md:min-w-[180px]">
-                      {cat.title}
-                    </h3>
+                  <div className={cat.wide ? 'flex flex-col md:flex-row md:items-start md:gap-16 flex-1' : ''}>
+                    <div className={cat.wide ? 'md:min-w-[200px]' : ''}>
+                      <h3 className="font-heading text-base font-semibold text-text-primary mb-1">
+                        {cat.title}
+                      </h3>
+                      <p className="text-text-muted text-xs leading-relaxed mb-3 md:mb-0">
+                        {cat.subtitle}
+                      </p>
+                    </div>
                     <ul className={`flex flex-col gap-2 ${cat.wide ? 'md:flex-row md:gap-8' : ''}`}>
                       {cat.items.map(item => (
                         <li key={item} className="flex items-start gap-2.5 text-text-muted text-sm">
@@ -210,6 +223,7 @@ export default function Services() {
               </FadeIn>
             ))}
           </div>
+
 
           {/* optional note */}
           <FadeIn delay={400}>
@@ -238,7 +252,7 @@ export default function Services() {
                 How We Work
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-3">
-                From first call to first results.
+                A simple path from first call to real growth.
               </h2>
             </div>
           </FadeIn>
@@ -295,9 +309,9 @@ export default function Services() {
         <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary leading-snug mb-5">
-              Want to grow your business with a system that actually works?
+              Ready to grow with a system built for results?
             </h2>
-            <p className="text-text-muted text-lg mb-10">Let&apos;s talk.</p>
+            <p className="text-text-muted text-lg mb-10">Let&apos;s talk about how we can turn your content, ads, and strategy into real business growth.</p>
           </FadeIn>
           <FadeIn delay={120}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
