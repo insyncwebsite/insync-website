@@ -194,23 +194,21 @@ export default function Services() {
           {/* category cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {categories.map((cat, i) => (
-              <FadeIn key={cat.title} delay={i * 70} className={cat.wide ? 'md:col-span-2' : ''}>
-                <div className={`border border-border rounded-xl bg-background p-5 sm:p-7 flex gap-5 hover:border-accent/40 group transition-colors duration-300 h-full ${cat.wide ? 'md:flex-row md:items-center' : 'flex-col'}`}>
+              <FadeIn key={cat.title} delay={i * 70} className={cat.wide ? 'md:col-span-2 md:flex md:justify-center' : ''}>
+                <div className={`border border-border rounded-xl bg-background p-5 sm:p-7 flex flex-col gap-5 hover:border-accent/40 group transition-colors duration-300 h-full${cat.wide ? ' md:w-[calc(50%-8px)]' : ''}`}>
                   {/* icon */}
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent/15 transition-colors duration-300">
                     <SvgIcon>{cat.icon}</SvgIcon>
                   </div>
                   {/* content */}
-                  <div className={cat.wide ? 'flex flex-col md:flex-row md:items-start md:gap-16 flex-1' : ''}>
-                    <div className={cat.wide ? 'md:min-w-[200px]' : ''}>
-                      <h3 className="font-heading text-base font-semibold text-text-primary mb-1">
-                        {cat.title}
-                      </h3>
-                      <p className="text-text-muted text-xs leading-relaxed mb-3 md:mb-0">
-                        {cat.subtitle}
-                      </p>
-                    </div>
-                    <ul className={`flex flex-col gap-2 ${cat.wide ? 'md:flex-row md:gap-8' : ''}`}>
+                  <div className="flex flex-col gap-2">
+                    <h3 className="font-heading text-base font-semibold text-text-primary mb-1">
+                      {cat.title}
+                    </h3>
+                    <p className="text-text-muted text-xs leading-relaxed mb-1">
+                      {cat.subtitle}
+                    </p>
+                    <ul className="flex flex-col gap-2">
                       {cat.items.map(item => (
                         <li key={item} className="flex items-start gap-2.5 text-text-muted text-sm">
                           <div className="w-1 h-1 rounded-full bg-accent mt-2 flex-shrink-0" />
